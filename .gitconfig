@@ -1,0 +1,35 @@
+[core]
+	pager = "less -RXMi"
+
+[diff]
+	tool = vimdiff
+	mnemonicprefix = true
+	renames = true
+	renamelimit = 3000
+
+[merge]
+	tool = vimdiff
+
+[color]
+	ui = auto
+
+[alias]
+	br = branch
+	cm = commit -s
+	co = checkout
+	df = diff
+	dfs = diff --staged
+	diffs = diff --staged
+	lol = log --graph --oneline --decorate
+	st = status
+	logg = log --cherry-pick --date=short --pretty=format:'%Cred%m%Creset %<(8,trunc)%C(yellow)%h %Creset- %C(blue)%ad %Cgreen%<(20,trunc)%an%Creset: %s'
+
+[branch]
+	autosetupmerge = true
+	autosetuprebase = always
+
+[push]
+	default = current
+
+[include]
+	path = ~/.gitconfig.local
