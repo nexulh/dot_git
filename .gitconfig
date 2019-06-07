@@ -2,10 +2,9 @@
 	pager = "less -RXMi"
 
 [diff]
-	tool = vimdiff
-	mnemonicprefix = true
 	renames = true
 	renamelimit = 3000
+	algorithm = histogram
 
 [merge]
 	tool = vimdiff
